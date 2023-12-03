@@ -26,7 +26,11 @@ const History = () => {
       <ul>
         {uniqueWords.map((word, index) => (
           <li key={index}>
-            <NavLink to={`/word/${word}`} onClick={() => handleWordClick(word)}>
+            <NavLink
+              to={`/word/${word}`}
+              onClick={() => handleWordClick(word)}
+              className='text-blue-500 underline'
+            >
               {word}
             </NavLink>
           </li>

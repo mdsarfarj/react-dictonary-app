@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element = {<MainPage/>}/>
         <Route path="/history" element = {<History/>}/>
-        <Route path="/word/:word" component={<WordMeaning/>} /> {/* Dynamic route */}
+        <Route path="/word/:word" element={<WordMeaning/>} /> {/* Dynamic route */}
       </Routes>
     </div>
   );
